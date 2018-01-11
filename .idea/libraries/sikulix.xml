@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="sikulix">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/PathLib/sikulix.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PathLib/testng-6.9.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/PathLib/sikulix.jar!/" />
+    </SOURCES>
+  </library>
+</component>

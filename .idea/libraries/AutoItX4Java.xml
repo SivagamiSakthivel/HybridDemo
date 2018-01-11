@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="AutoItX4Java">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/AutoItX4Java.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/extentreports-2.40.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/jacob-1.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/sikulix.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/testng-6.9.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/sikulix.jar!/" />
+    </SOURCES>
+  </library>
+</component>

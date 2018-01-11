@@ -1,0 +1,53 @@
+package TestCases.OmniFullfillment;
+import ExtendReports.ExtendReportManager;
+import PageObjects.WorkLoadSummaryPage;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.LogStatus;
+import org.testng.annotations.*;
+import org.testng.annotations.Test;
+import java.io.File;
+import com.jacob.com.LibraryLoader;
+
+public class TC_02_OmniFullfillment_WorkLoad_Validations {
+
+    WorkLoadSummaryPage WLS=new WorkLoadSummaryPage();
+
+    @BeforeTest
+    public void Initialise()
+    {
+        String jacobDllVersionToUse;
+        if (System.getProperty("sun.arch.data.model").contains("32")) {
+            jacobDllVersionToUse = "jacob-1.18-x86.dll";
+        } else {
+            jacobDllVersionToUse = "jacob-1.18-x64.dll";
+        }
+
+        File file = new File("src\\main\\resources\\Lib", jacobDllVersionToUse);
+        System.setProperty(LibraryLoader.JACOB_DLL_PATH, file.getAbsolutePath());
+
+    }
+
+    @Test
+    public void Validate_WorkLoadSummary() throws Exception
+    {
+        try
+        {
+            WLS.waitScreen();
+            WLS.LaunchApplication();
+            WLS.ValidateWorkLoad_Details();
+        }
+        catch (Exception ex)
+        {
+            System.out.println(ex.getMessage());
+
+        }
+    }
+
+    @AfterTest
+    public void closeApp() throws Exception
+    {
+        WLS.CloseApp();
+        WLS.CloseApp_AutoIT();
+    }
+
+}
