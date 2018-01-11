@@ -1,8 +1,5 @@
 package TestCases.OmniFullfillment;
-import ExtendReports.ExtendReportManager;
 import PageObjects.WorkLoadSummaryPage;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.LogStatus;
 import org.testng.annotations.*;
 import org.testng.annotations.Test;
 import java.io.File;
